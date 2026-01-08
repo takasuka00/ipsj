@@ -1,10 +1,24 @@
 \begin{thebibliography}{1}
 
-\bibitem{Kim2018VRSQ}
-Hyun~K. Kim, Jaehyun Park, Yeongcheol Choi, and Mungyeong Choe.
-\newblock Virtual reality sickness questionnaire (vrsq): Motion sickness
-  measurement index in a virtual reality environment.
-\newblock {\em Applied Ergonomics}, Vol.~69, pp. 66--73, 2018.
+\bibitem{Saredakis2020Factors}
+Dimitrios Saredakis, Andrzej Szpak, Benjamin Birckhead, Hannah A.~D. Keage,
+  Albert Rizzo, and Tobias Loetscher.
+\newblock Factors associated with virtual reality sickness in head-mounted
+  displays: A systematic review and meta-analysis.
+\newblock {\em Frontiers in Human Neuroscience}, Vol.~14, p.~96, 2020.
+
+\bibitem{Weech2019Presence}
+Sebastien Weech, Sean Kenny, and Michael Barnett-Cowan.
+\newblock Presence and cybersickness in virtual reality are negatively related:
+  A review.
+\newblock {\em Frontiers in Psychology}, Vol.~10, p. 158, 2019.
+
+\bibitem{Sra2019ProprioGVS}
+Misha Sra, Abhinandan Jain, and Pattie Maes.
+\newblock Adding proprioceptive feedback to virtual reality experiences using
+  galvanic vestibular stimulation.
+\newblock In {\em Proceedings of the 2019 CHI Conference on Human Factors in
+  Computing Systems (CHI '19)}, pp. 1--13. ACM, 2019.
 
 \bibitem{Peng2020WalkingVibe}
 Yi-Hao Peng, Carolyn Yu, Shi-Hong Liu, Chung-Wei Wang, Paul Taele, Neng-Hao Yu,
@@ -14,13 +28,6 @@ Yi-Hao Peng, Carolyn Yu, Shi-Hong Liu, Chung-Wei Wang, Paul Taele, Neng-Hao Yu,
 \newblock In {\em Proceedings of the 2020 CHI Conference on Human Factors in
   Computing Systems (CHI '20)}, pp. 1--12. ACM, 2020.
 
-\bibitem{Saredakis2020Factors}
-Dimitrios Saredakis, Andrzej Szpak, Benjamin Birckhead, Hannah A.~D. Keage,
-  Albert Rizzo, and Tobias Loetscher.
-\newblock Factors associated with virtual reality sickness in head-mounted
-  displays: A systematic review and meta-analysis.
-\newblock {\em Frontiers in Human Neuroscience}, Vol.~14, p.~96, 2020.
-
 \bibitem{Song2025NeckVRrr}
 Kun-Woo Song and Sang~Ho Yoon.
 \newblock Neck goes vrrr: Reducing rotation-induced virtual reality sickness
@@ -28,17 +35,10 @@ Kun-Woo Song and Sang~Ho Yoon.
 \newblock {\em IEEE Transactions on Visualization and Computer Graphics},
   Vol.~31, No.~10, pp. 6977--6990, 2025.
 
-\bibitem{Sra2019ProprioGVS}
-Misha Sra, Abhinandan Jain, and Pattie Maes.
-\newblock Adding proprioceptive feedback to virtual reality experiences using
-  galvanic vestibular stimulation.
-\newblock In {\em Proceedings of the 2019 CHI Conference on Human Factors in
-  Computing Systems (CHI '19)}, pp. 1--13. ACM, 2019.
-
-\bibitem{Weech2019Presence}
-Sebastien Weech, Sean Kenny, and Michael Barnett-Cowan.
-\newblock Presence and cybersickness in virtual reality are negatively related:
-  A review.
-\newblock {\em Frontiers in Psychology}, Vol.~10, p. 158, 2019.
+\bibitem{Kim2018VRSQ}
+Hyun~K. Kim, Jaehyun Park, Yeongcheol Choi, and Mungyeong Choe.
+\newblock Virtual reality sickness questionnaire (vrsq): Motion sickness
+  measurement index in a virtual reality environment.
+\newblock {\em Applied Ergonomics}, Vol.~69, pp. 66--73, 2018.
 
 \end{thebibliography}
