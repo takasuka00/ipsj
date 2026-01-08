@@ -1,5 +1,8 @@
 % main.tex
 \documentclass[twocolumn]{jarticle}
+
+
+
 \usepackage[top=30truemm,bottom=25truemm,left=20truemm,right=20truemm]{geometry}
 \usepackage[dvipdfmx]{graphicx,color}
 \usepackage{cite}
@@ -7,6 +10,8 @@
 \usepackage{float}
 \usepackage{subcaption}
 \usepackage{amsmath}
+\usepackage{ipsj}
+
 
 % 画像ファイルのパスを設定（srcディレクトリ基準とoutディレクトリ基準の両方を追加）
 \graphicspath{{../src/pictures/}{pictures/}}
@@ -19,31 +24,17 @@
 \setlength{\abovecaptionskip}{2pt}
 \setlength{\belowcaptionskip}{2pt}
 
-% セクション間のスペース調整
-\makeatletter
-\renewcommand{\section}{
-    \@startsection{section}{1}{\z@}
-    {1.5ex plus .5ex minus .2ex}
-    {0.8ex plus .2ex}
-    {\normalfont\large\bfseries}
-}
-\renewcommand{\subsection}{
-    \@startsection{subsection}{2}{\z@}
-    {1ex plus .3ex minus .2ex}
-    {0.5ex plus .2ex}
-    {\normalfont\normalsize\bfseries}
-}
-\makeatother
 
-\title{\large\gt マルチモーダルな感覚刺激に基づく加速度感覚誘発システム}
-
-\author{\normalsize
-    \begin{tabular}{c}
-        高須賀 颯太$^{1}$ \quad 竹中 健介$^{1}$ \quad 島 圭介$^{1}$ \quad 島谷 康司$^{2}$ \\
-        \vspace{1mm}
-        $^{1}$横浜国立大学大学院環境情報学府 \quad $^{2}$広島県立大学保健福祉学科
-    \end{tabular}
+\title{\large\gt マルチモーダルな感覚刺激に基づく加速度感覚誘発システム}{
+A Multimodal Sensory Stimulation-Based System for Inducing Acceleration Sensations
 }
+
+\author{横浜国立大学}{高須賀 颯太}{Sota Takasuga, Yokohama National University}
+\author{横浜国立大学}{竹中 健介}{Kensuke Takenaka, Yokohama National University}
+\author{横浜国立大学}{島 圭介}{Keisuke Shima, Yokohama National University}
+\author{広島県立大学}{島谷 康司}{Koji Shimatani, Prefectural University of Hiroshima}
+
+
 \date{}
 
 \begin{document}

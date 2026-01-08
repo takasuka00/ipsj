@@ -1,9 +1,9 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.15)  8 JAN 2026 17:08
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.17)  9 JAN 2026 02:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**C:/Users/takasuka/IdeaProjects/ipsj//src/main
-(c:/Users/takasuka/IdeaProjects/ipsj//src/main.tex
+**C:/Users/ShimaLab/IdeaProjects/ipsj//src/main
+(c:/Users/ShimaLab/IdeaProjects/ipsj//src/main.tex
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
@@ -217,35 +217,38 @@ LaTeX Info: Redefining \Relbar on input line 970.
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 )
+(C:\Users\ShimaLab\IdeaProjects\ipsj\\out/ipsj.sty
+\author@count=\count304
+)
 (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 File: l3backend-dvips.def 2025-10-09 L3 backend support: dvips
 \l__pdfannot_backend_content_box=\box76
 \l__pdfannot_backend_model_box=\box77
-\g__pdfannot_backend_int=\count304
-\g__pdfannot_backend_link_int=\count305
-\g__pdfannot_backend_link_sf_int=\count306
+\g__pdfannot_backend_int=\count305
+\g__pdfannot_backend_link_int=\count306
+\g__pdfannot_backend_link_sf_int=\count307
 )
-(C:\Users\takasuka\IdeaProjects\ipsj\\out/main.aux)
+(C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
@@ -263,11 +266,11 @@ LaTeX Font Info:    ... okay on input line 49.
 * \textheight=688.5567pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
-* \topmargin=-23.91173pt
-* \headheight=12.0pt
-* \headsep=25.0pt
+* \topmargin=13.08827pt
+* \headheight=0.0pt
+* \headsep=0.0pt
 * \topskip=7.77588pt
-* \footskip=30.0pt
+* \footskip=0.0pt
 * \marginparwidth=43.0pt
 * \marginparsep=10.0pt
 * \columnsep=19.91692pt
@@ -283,16 +286,46 @@ LaTeX Font Info:    ... okay on input line 49.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 41.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 41.
+
+LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 41.
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 41.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 41.
+
+
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 41.
+
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 43.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 43.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 52.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 52.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 60.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 60.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 51.
 File: ../src/pictures/system_real.jpg Graphic file (type bmp)
 <../src/pictures/system_real.jpg>
+
+Overfull \hbox (9.62216pt too wide) has occurred while \output is active
+[][] 
+ []
+
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 70.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 70.
 [1
 
 
@@ -306,7 +339,7 @@ File: ../src/pictures/VRSQ_diff.png Graphic file (type bmp)
 <../src/pictures/VRSQ_diff.png>
 File: ../src/pictures/immersive_diff.png Graphic file (type bmp)
 <../src/pictures/immersive_diff.png>
- (C:\Users\takasuka\IdeaProjects\ipsj\\out/main.bbl
+ (C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.bbl
 LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
 (Font)              No change on input line 8.
 LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
@@ -324,21 +357,26 @@ Underfull \hbox (badness 1152) in paragraph at lines 39--43
 []\OT1/cmr/m/n/8 Hyun K. Kim, Jae-hyun Park, Yeongcheol Choi, and
  []
 
-) [3] (C:\Users\takasuka\IdeaProjects\ipsj\\out/main.aux)
+) [3] (C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.28pt have occurred.
+
  ) 
 Here is how much of TeX's memory you used:
- 4196 strings out of 468182
- 70163 string characters out of 5438210
- 493018 words of memory out of 5000000
- 33070 multiletter control sequences out of 15000+600000
- 639147 words of font info for 85 fonts, out of 8000000 for 9000
- 929 hyphenation exceptions out of 8191
- 67i,16n,77p,846b,601s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 4262 strings out of 469647
+ 71276 string characters out of 5472187
+ 490739 words of memory out of 5000000
+ 33009 multiletter control sequences out of 15000+600000
+ 643283 words of font info for 101 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 67i,12n,77p,846b,599s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on C:\Users\takasuka\IdeaProjects\ipsj\\out/main.dvi (3 pages, 2
-0096 bytes).
+Output written on C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.dvi (3 pages, 2
+0988 bytes).
