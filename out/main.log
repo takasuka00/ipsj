@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.17)  9 JAN 2026 06:14
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.17)  9 JAN 2026 06:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -339,11 +339,6 @@ Overfull \hbox (9.62216pt too wide) has occurred while \output is active
 [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
-[]\JY1/mc/m/n/10 振動刺激部にはフ ォ スタ ー電機の \OT1/cmr/m/n/10 FOS-TER
- []
-
 [1
 
 
@@ -370,9 +365,7 @@ Underfull \hbox (badness 1152) in paragraph at lines 11--15
 []\OT1/cmr/m/n/8 Hyun K. Kim, Jae-hyun Park, Yeongcheol Choi, and
  []
 
-[2]) [3
-
-] (C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.aux)
+) [2] (C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2025-11-01>
@@ -385,13 +378,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 4282 strings out of 469647
- 71662 string characters out of 5472187
+ 4279 strings out of 469647
+ 71623 string characters out of 5472187
  493299 words of memory out of 5000000
- 33026 multiletter control sequences out of 15000+600000
- 643896 words of font info for 103 fonts, out of 8000000 for 9000
+ 33024 multiletter control sequences out of 15000+600000
+ 643557 words of font info for 102 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 67i,12n,77p,508b,603s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,12n,77p,547b,603s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.dvi (3 pages, 1
-6452 bytes).
+Output written on C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.dvi (2 pages, 1
+6312 bytes).
