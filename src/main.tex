@@ -6,6 +6,7 @@
 \usepackage{array}
 \usepackage{float}
 \usepackage{subcaption}
+\usepackage{amsmath}
 
 % 画像ファイルのパスを設定（srcディレクトリ基準とoutディレクトリ基準の両方を追加）
 \graphicspath{{../src/pictures/}{pictures/}}
@@ -20,17 +21,17 @@
 
 % セクション間のスペース調整
 \makeatletter
-\renewcommand{\section}{%
-  \@startsection{section}{1}{\z@}%
-  {1.5ex plus .5ex minus .2ex}% 前のスペース（デフォルトより小さく）
-  {0.8ex plus .2ex}% 後のスペース（デフォルトより小さく）
-  {\normalfont\large\bfseries}%
+\renewcommand{\section}{
+    \@startsection{section}{1}{\z@}
+    {1.5ex plus .5ex minus .2ex}
+    {0.8ex plus .2ex}
+    {\normalfont\large\bfseries}
 }
-\renewcommand{\subsection}{%
-  \@startsection{subsection}{2}{\z@}%
-  {1ex plus .3ex minus .2ex}% 前のスペース
-  {0.5ex plus .2ex}% 後のスペース
-  {\normalfont\normalsize\bfseries}%
+\renewcommand{\subsection}{
+    \@startsection{subsection}{2}{\z@}
+    {1ex plus .3ex minus .2ex}
+    {0.5ex plus .2ex}
+    {\normalfont\normalsize\bfseries}
 }
 \makeatother
 
@@ -49,29 +50,73 @@
     \maketitle
 
     \section{はじめに}
-    HMD型VRは訓練・設計支援・教育など多様な領域へ普及している一方，利用継続を妨げる要因としてVR酔いが知られている\cite{Saredakis2020Factors}．VR酔いは，視覚運動により自己運動知覚が生じたにもかかわらず，前庭・体性感覚側の手掛かりが不足または不整合となることで生じやすく，吐き気やめまい等の不快が体験品質を低下させる．また，没入感と不快は負に関連し得るため\cite{Weech2019Presence}，VR酔いの低減は体験価値の向上にも直結し得る．
+    頭部装着型ディスプレイ（Head Mounted Display: HMD）を用いるVirtual Reality（VR）は訓練・設計支援・教育など多様な領域へ普及している一方，利用継続を妨げる要因としてVR酔いが知られている\cite{Saredakis2020Factors}．VR酔いは，視覚運動により自己運動知覚が生じたにもかかわらず，前庭・体性感覚側の手掛かりが不足または不整合となることで生じやすく，吐き気やめまい等の不快が体験品質を低下させる．また，没入感と不快は負に関連し得るため\cite{Weech2019Presence}，VR酔いの低減は体験価値の向上にも直結し得る．
 
-    本研究は，不足している感覚手掛かりを付与する方針を取り，視覚運動に同期した前庭電気刺激（GVS）と頬・首への振動刺激を組み合わせて提示することで，加速度感覚の補完と感覚間整合の向上を狙う．GVSはVR体験における運動感覚の補助に用いられており\cite{Sra2019ProprioGVS}，頭頸部への振動提示もVR酔い低減やリアリズム向上に寄与し得る\cite{Peng2020WalkingVibe,Song2025NeckVRrr}．これらを速度・加速度に基づき同期制御するシステムを構築し，VR酔いと没入感への影響を検証する．
+    本研究は，不足している感覚手掛かりを付与する方針を取り，視覚運動に同期した前庭電気刺激（Galvanic Vestibular Stimulation: GVS）と頬・首への振動刺激を組み合わせて提示することで，加速度感覚の補完と感覚間整合の向上を狙う．GVSはVR体験における運動感覚の補助に用いられており\cite{Sra2019ProprioGVS}，頭頸部への振動提示もVR酔い低減やリアリズム向上に寄与し得る\cite{Peng2020WalkingVibe,Song2025NeckVRrr}．これらを速度・加速度に基づき同期制御するシステムを構築し，VR酔いと没入感への影響を検証する．
+
+
 
     \section{システム}
-    \subsection{構成とデータフロー}
-    提案システムは，(i) VRアプリケーション，(ii) 刺激制御モジュール，(iii) 刺激提示部（GVS・振動）から構成される．VRアプリケーション（例：Unity）から，視点（あるいはユーザ座標系）における速度$v(t)$と加速度$a(t)$のみを取得し，刺激制御モジュールへ送信する．刺激制御モジュールは受信した$v(t),a(t)$を基に刺激パラメータを算出し，GVSドライバおよび振動アクチュエータ（頬・首）を駆動する．同時に，刺激ログ（時刻，GVS条件，振動条件，算出した刺激指令値）を保存する．
+    \subsection{構成と処理手順}
+    提案システムは，Unity上で実行されるVRシミュレーション（PC）と，Bluetooth通信で接続された刺激提示デバイスから構成される．Unityは視点（ユーザ座標系）における前方速度$v_{\mathrm{fwd}}(t)$および左右方向加速度$a_{\mathrm{lat}}(t)$を算出し，それらを刺激指令値へ変換してBluetoothでデバイスへ送信する．デバイス側は受信した指令値に基づき，前庭電気刺激（Galvanic Vestibular Stimulation: GVS）の電流と，左右振動アクチュエータの振幅を生成する．図\ref{fig:system_photo}に，実際に作成したシステム外観を示す．
 
     \begin{figure}[H]
         \centering
-        \fbox{\parbox{0.95\columnwidth}{\centering 図1：システム構成図（ダミー）\\
-        速度・加速度取得 → 刺激生成 → GVS/振動提示}}
-        \caption{提案システムの概略}
-        \label{fig:system}
+        \includegraphics[width=0.95\columnwidth]{system_real.jpg}
+        \caption{作成した刺激提示デバイスの外観}
+        \label{fig:system_photo}
     \end{figure}
 
-    \subsection{刺激生成（速度・加速度に基づく同期制御）}
-    刺激生成は速度および加速度から行う．本稿では速度・加速度のみを用いるため，視覚運動の主要な変化（定速移動・加速・減速）に対して刺激を追従させる設計とした．GVSは加速度の符号（例：前後方向）に応じて極性を切り替え，強度は条件（無／弱／強）として切り替える．振動刺激は速度・加速度の大きさに応じて強度を変調し，頬・首の提示部位を用いて運動方向の手掛かりを補助する．
+    \subsection{刺激指令値の生成}
+    本システムでは，GVS指令値は$-1$から$1$の範囲，振動指令値は$0$から$1$の範囲となるように正規化する．実験では基準値として左右方向加速度の基準値$a_{\mathrm{ref}}=1\,\mathrm{m/s^2}$，前方速度の基準値$v_{\mathrm{ref}}=1\,\mathrm{m/s}$を用いた．まず，左右方向加速度と前方速度を次の正規化量として扱う：
+    \[
+        \hat{a}(t)=\frac{a_{\mathrm{lat}}(t)}{a_{\mathrm{ref}}},\qquad
+        \hat{v}(t)=\frac{|v_{\mathrm{fwd}}(t)|}{v_{\mathrm{ref}}}.
+    \]
+    ここで，$\hat{a}(t)$は$-1$未満なら$-1$，$1$を超えるなら$1$として扱い，$\hat{v}(t)$は$1$を超える場合は$1$として扱う．
 
-    \subsection{安全設計と同期性の確保}
-    刺激提示では安全性と同期性が重要である．刺激制御モジュールでは，刺激指令値の急峻な変化を抑えるための平滑化（例：一次遅れ相当のフィルタ）を導入し，指令値の上限を飽和処理により制限する．また，緊急停止（手動停止）を設け，異常時に刺激を停止できるようにする．同期性については，VR側の更新周期に合わせて刺激指令を更新し，視覚運動の変化に対する刺激遅延を可能な限り小さくする．
+    \paragraph{GVS（電流）}
+    GVSの指令値は，左右方向加速度の正規化量をそのまま用いる：
+    \begin{equation}
+        u_{\mathrm{gvs}}(t)=\hat{a}(t)\qquad (-1\le u_{\mathrm{gvs}}(t)\le 1).
+    \end{equation}
+    デバイス側には最大電流量を調整するつまみがあり，設定された最大電流$I_{\max}$とPCからの指令値を乗算して出力電流を決定する：
+    \begin{equation}
+        I_{\mathrm{gvs}}(t)=I_{\max}\,u_{\mathrm{gvs}}(t).
+    \end{equation}
+
+    \paragraph{振動（振幅）}
+    振動は右・左それぞれの振幅指令を生成し，いずれも$0$から$1$の範囲として扱う．前方速度と左右方向加速度を混合するため，混合比$r$（速度側の重み）を導入し，実験では$r=0.7$とした．右・左の振動指令値は次式で与える：
+    \begin{align}
+        u_{\mathrm{vib,R}}(t) &= (1-r)\,\hat{a}(t) + r\,\hat{v}(t),\\
+        u_{\mathrm{vib,L}}(t) &= -(1-r)\,\hat{a}(t) + r\,\hat{v}(t).
+    \end{align}
+    算出後，負の値は$0$として扱い，$1$を超える場合は$1$として扱うことで，最終的に$0\le u_{\mathrm{vib,R}}(t),u_{\mathrm{vib,L}}(t)\le 1$を満たす指令値とする．デバイス側では，これらの指令値に比例した振幅で右・左の振動アクチュエータを駆動する．
+
 
     \section{実験}
+    \subsection{タスクと環境}
+    被験者はHMDを装着し，Unity上で提示されるコースター体験タスクを実施した．タスク時間は約1分であり，視点運動は左右方向の運動成分のみを持つように設計した．実験中，Unityから視点（ユーザ座標系）における前方速度$v_{\mathrm{fwd}}(t)$および左右方向加速度$a_{\mathrm{lat}}(t)$を取得し，2章で述べた方法で刺激指令値へ変換してBluetoothで刺激提示デバイスへ送信した．図\ref{fig:exp_task}に被験者装着の様子とタスク画面を示す．
+
+    \begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.48\columnwidth}
+            \centering
+            \includegraphics[width=\linewidth]{exp_subject.jpg}
+            \caption{被験者装着の様子}
+            \label{fig:exp_subject}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.48\columnwidth}
+            \centering
+            \includegraphics[width=\linewidth]{exp_scene.png}
+            \caption{Unity上のタスク画面}
+            \label{fig:exp_scene}
+        \end{subfigure}
+        \caption{実験環境とタスク}
+        \label{fig:exp_task}
+    \end{figure}
+
     \subsection{被験者と条件}
     被験者数は8名である．前庭電気刺激は無・弱（感覚閾値未満）・強（約$2\,\mathrm{mA}$）の3水準，振動刺激は無・有の2水準とし，$3\times2$の計6条件を設定した．case番号と刺激条件の対応を表\ref{tab:conditions}に示す．感覚閾値は被験者ごとに簡易手続きで同定し，弱条件は主観的に知覚されない範囲で設定した．強条件は約$2\,\mathrm{mA}$を目安に設定した．各条件は3試行とし，条件順は被験者ごとにランダムに決定した．
 
@@ -84,23 +129,31 @@
             \hline
             case & 前庭電気刺激（GVS） & 振動刺激 \\
             \hline
-            0    & 無                     & 無    \\
-            1    & 弱（感覚閾値未満）        & 無    \\
-            2    & 強（約$2\,\mathrm{mA}$）& 無    \\
-            3    & 無                     & 有    \\
-            4    & 弱（感覚閾値未満）        & 有    \\
-            5    & 強（約$2\,\mathrm{mA}$）& 有    \\
+            0 & 無 & 無 \\
+            1 & 弱（感覚閾値未満） & 無 \\
+            2 & 強（約$2\,\mathrm{mA}$） & 無 \\
+            3 & 無 & 有 \\
+            4 & 弱（感覚閾値未満） & 有 \\
+            5 & 強（約$2\,\mathrm{mA}$） & 有 \\
             \hline
         \end{tabular}
     \end{table}
 
     \subsection{評価指標}
-    VR酔いの程度はVRSQ\cite{Kim2018VRSQ}で評価し，没入感はVAS（Visual Analog Scale）で取得した．個人差を抑えるため，各条件のスコアからcase0（刺激なし）を基準とした差分を算出し，VRSQ\_diffおよびimmersive\_diffとして比較した．VRSQ\_diffは負方向がVR酔いの低減，immersive\_diffは正方向が没入感の向上を表す．
+    VR酔いの程度はVirtual Reality Sickness Questionnaire（VRSQ）\cite{Kim2018VRSQ}で評価し，没入感はVisual Analog Scale（VAS）で取得した．個人差を抑えるため，各条件のスコアからcase0（刺激なし）を基準とした差分を算出し，VRSQ\_diffおよびimmersive\_diffとして比較した．VRSQ\_diffは負方向がVR酔いの低減，immersive\_diffは正方向が没入感の向上を表す．
 
     \subsection{統計解析}
-    VR酔い (VRSQ\_diff) についてはシャピロウィルク検定の$p$値がすべて0.05を上回ったため，パラメトリックとして扱い事後比較を行った．多重比較に伴う第I種過誤を抑えるため，ボンフェローニ補正を適用した$p$値を用いた．没入感（immersive\_diff）についてはシャピロウィルク検定の$p$値が0.05を下回る条件が含まれたためノンパラメトリックとして扱い，Dunnの事後比較を行った．同様に，ボンフェローニ補正を適用した$p$値を用いた．図\ref{fig:results}には有意差を示す．
+    VR酔い（VRSQ\_diff）についてはシャピロウィルク検定の$p$値がすべて0.05を上回ったため，パラメトリックとして扱い事後比較を行った．多重比較に伴う第I種過誤を抑えるため，ボンフェローニ補正を適用した$p$値を用いた．没入感（immersive\_diff）についてはシャピロウィルク検定の$p$値が0.05を下回る条件が含まれたためノンパラメトリックとして扱い，Dunnの事後比較を行った．同様に，ボンフェローニ補正を適用した$p$値を用いた．
 
-    \begin{figure}[t]
+
+
+
+    \subsection{結果と考察}
+    図\ref{fig:vrsq}にVR酔い変化 (VRSQ\_diff) を示す．無刺激（case0）と比較して，GVS弱（case1）または振動刺激（case3）を付与した条件でVR酔い改善に有意差が確認された．さらに，片方のみを付与した条件（case1またはcase3）と比較して，両方を併用した条件（case4）でVR酔い改善に有意差が確認され，併用による重畳効果が示唆された．一方で，振動併用下における前庭刺激強度の差（case4とcase5）については，本結果から明確な差は読み取れなかった．以上より，前庭・体性感覚いずれの手掛かり付与も視覚運動との不一致を緩和し得るが，特にGVS弱と振動刺激の併用は単独提示よりもVR酔い低減に寄与する可能性がある．先行研究でもGVSによる運動感覚の補助\cite{Sra2019ProprioGVS}や頭頸部への振動提示によるVR酔い低減\cite{Peng2020WalkingVibe,Song2025NeckVRrr}が報告されており，本研究の結果はこれらの知見と整合する．
+
+    図\ref{fig:imm}に没入感変化 (immersive\_diff) を示す．没入感は刺激条件によって変化し，特に振動刺激を含む条件で向上傾向が見られる．ただし，没入感は一部条件で正規性を満たさなかったため，ノンパラメトリックに事後比較（Dunn）を行い，ボンフェローニ補正後の$p$値で判断した．没入感に関しては個人差や分散が大きくなりやすく，刺激タイミングや強度変調が視覚運動と不整合になる場合には効果が一様にならない可能性がある．したがって，今後は同期誤差の定量化と個人適応（閾値同定や強度スケーリング）を導入し，VR酔い低減と没入感向上の両立を図る必要がある．
+
+    \begin{figure}[H]
         \centering
         \begin{subfigure}[b]{0.48\columnwidth}
             \centering
@@ -119,14 +172,14 @@
         \label{fig:results}
     \end{figure}
 
-    \subsection{結果と考察}
-    図\ref{fig:vrsq}にVR酔い変化 (VRSQ\_diff) を示す．無刺激（case0）と比較して，GVS弱（case1）または振動刺激（case3）を付与した条件でVR酔い改善に有意差が確認された．さらに，片方のみを付与した条件（case1またはcase3）と比較して，両方を併用した条件（case4）でVR酔い改善に有意差が確認され，併用による重畳効果が示唆された．一方で，振動併用下における前庭刺激強度の差（case4とcase5）については，本結果から明確な差は読み取れなかった．以上より，前庭・体性感覚いずれの手掛かり付与も視覚運動との不一致を緩和し得るが，特にGVS弱と振動刺激の併用は単独提示よりもVR酔い低減に寄与する可能性がある．先行研究でもGVSによる運動感覚の補助\cite{Sra2019ProprioGVS}や頭頸部への振動提示によるVR酔い低減\cite{Peng2020WalkingVibe,Song2025NeckVRrr}が報告されており，本研究の結果はこれらの知見と整合する．
-
-    図\ref{fig:imm}に没入感変化 (immersive\_diff) を示す．没入感は刺激条件によって変化し，特に振動刺激を含む条件で向上傾向が見られる．ただし，没入感は一部条件で正規性を満たさなかったため，ノンパラメトリックに事後比較（Dunn）を行い，ボンフェローニ補正後の$p$値で判断した．没入感に関しては個人差や分散が大きくなりやすく，刺激タイミングや強度変調が視覚運動と不整合になる場合には効果が一様にならない可能性がある．したがって，今後は同期誤差の定量化と個人適応（閾値同定や強度スケーリング）を導入し，VR酔い低減と没入感向上の両立を図る必要がある．
-
     \section{まとめ}
     視覚運動（速度・加速度）に同期して前庭電気刺激と頬・首振動を同時制御する加速度感覚誘発システムを提案し，6条件の被験者内比較によりVRSQとVASを用いて評価した．その結果，無刺激条件に対してGVS弱または振動刺激の付与でVR酔い改善に有意差が見られ，さらに単独提示条件に対して併用条件で有意に改善することが確認された．今後は，同期誤差の定量化と個人適応を導入し，刺激設計の最適化を進める．
 
+    % 参考文献の見出しを調整
+    \makeatletter
+    \renewcommand{\refname}{\normalsize 参考文献}
+    \makeatother
+    
     \footnotesize
     \bibliographystyle{junsrt}
     \bibliography{references}
