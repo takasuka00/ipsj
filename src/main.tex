@@ -1,7 +1,5 @@
 % main.tex
-\documentclass[twocolumn]{jarticle}
-
-
+\documentclass[platex,dvipdfmx,a4paper,twocolumn,base=8.5pt,jbase=8.5pt,ja=standard]{jarticle}
 
 \usepackage[top=30truemm,bottom=25truemm,left=20truemm,right=20truemm]{geometry}
 \usepackage[dvipdfmx]{graphicx,color}
@@ -24,10 +22,8 @@
 \setlength{\abovecaptionskip}{2pt}
 \setlength{\belowcaptionskip}{2pt}
 
-
-\title{\large\gt マルチモーダルな感覚刺激に基づく加速度感覚誘発システム}{
-A Multimodal Sensory Stimulation-Based System for Inducing Acceleration Sensations
-}
+\setlength\textfloatsep{15pt}
+\title{\large\gt マルチモーダルな感覚刺激に基づく加速度感覚誘発システム}{A Multimodal Sensory Stimulation-Based System for Inducing Acceleration Sensations}
 
 \author{横浜国立大学}{高須賀 颯太}{Sota Takasuga, Yokohama National University}
 \author{横浜国立大学}{竹中 健介}{Kensuke Takenaka, Yokohama National University}
@@ -38,6 +34,7 @@ A Multimodal Sensory Stimulation-Based System for Inducing Acceleration Sensatio
 \date{}
 
 \begin{document}
+    \setlength{\abovedisplayskip}{-3pt} % 上部のマージン
     \maketitle
 
     \section{はじめに}
