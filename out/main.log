@@ -1,103 +1,120 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.17)  7 JAN 2026 17:29
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.euc) (TeX Live 2023/Debian) (preloaded format=platex 2026.1.8)  8 JAN 2026 14:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**C:/Users/ShimaLab/IdeaProjects/ipsj//src/main
-(c:/Users/ShimaLab/IdeaProjects/ipsj//src/main.tex
+**/mnt/c/Users/takasuka/IdeaProjects/ipsj/src/main.tex
+(/mnt/c/Users/takasuka/IdeaProjects/ipsj/src/main.tex
 pLaTeX2e <2023-02-14>+1, based on
-LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-06>
-(c:/texlive/2025/texmf-dist/tex/platex/base/jarticle.cls
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/platex/base/jarticle.cls
 Document Class: jarticle 2020/09/30 v1.8f Standard pLaTeX class
-\c@@paper=\count274
-(c:/texlive/2025/texmf-dist/tex/platex/base/jsize10.clo
+\c@@paper=\count186
+(/usr/share/texlive/texmf-dist/tex/platex/base/jsize10.clo
 File: jsize10.clo 2020/09/30 v1.8f Standard pLaTeX file (size option)
 )
-\c@part=\count275
-\c@section=\count276
-\c@subsection=\count277
-\c@subsubsection=\count278
-\c@paragraph=\count279
-\c@subparagraph=\count280
-\c@figure=\count281
-\c@table=\count282
-\abovecaptionskip=\skip49
-\belowcaptionskip=\skip50
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
 \symmincho=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
 (Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 615.
-\toclineskip=\dimen164
-\@lnumwidth=\dimen165
-\bibindent=\dimen166
-\heisei=\count283
+\toclineskip=\dimen156
+\@lnumwidth=\dimen157
+\bibindent=\dimen158
+\heisei=\count195
 )
-(c:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(c:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
 )
-(c:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2024/12/12 v1.0g TeX engine tests
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count284
-\Gm@cntv=\count285
-\c@Gm@tempcnt=\count286
-\Gm@bindingoffset=\dimen167
-\Gm@wd@mp=\dimen168
-\Gm@odd@mp=\dimen169
-\Gm@even@mp=\dimen170
-\Gm@layoutwidth=\dimen171
-\Gm@layoutheight=\dimen172
-\Gm@layouthoffset=\dimen173
-\Gm@layoutvoffset=\dimen174
+\Gm@cnth=\count196
+\Gm@cntv=\count197
+\c@Gm@tempcnt=\count198
+\Gm@bindingoffset=\dimen159
+\Gm@wd@mp=\dimen160
+\Gm@odd@mp=\dimen161
+\Gm@even@mp=\dimen162
+\Gm@layoutwidth=\dimen163
+\Gm@layoutheight=\dimen164
+\Gm@layouthoffset=\dimen165
+\Gm@layoutvoffset=\dimen166
 \Gm@dimlist=\toks19
 )
-(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: dvipdfmx.def on input line 106.
+Package graphics Info: Driver file: dvipdfmx.def on input line 107.
 
-(c:/texlive/2025/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
-File: dvipdfmx.def 2025/09/29 v5.0n Graphics/color driver for dvipdfmx
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2022/09/22 v5.0m Graphics/color driver for dvipdfmx
 ))
-\Gin@req@height=\dimen175
-\Gin@req@width=\dimen176
+\Gin@req@height=\dimen167
+\Gin@req@width=\dimen168
 )
-(c:/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
 
-(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: dvipdfmx.def on input line 149.
 
-(c:/texlive/2025/texmf-dist/tex/latex/graphics/dvipsnam.def
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )
-(c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-(c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
-File: l3backend-dvips.def 2025-10-09 L3 backend support: dvips
-\l__pdfannot_backend_content_box=\box70
-\l__pdfannot_backend_model_box=\box71
-\g__pdfannot_backend_int=\count287
-\g__pdfannot_backend_link_int=\count288
-\g__pdfannot_backend_link_sf_int=\count289
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
 )
-(C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen169
+\ar@mcellbox=\box68
+\extrarowheight=\dimen170
+\NC@list=\toks20
+\extratabsurround=\skip50
+\backup@length=\skip51
+\ar@cellbox=\box69
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2024-01-04 L3 backend support: dvips
+\l__pdf_internal_box=\box70
+\g__pdf_backend_object_int=\count199
+\l__pdf_backend_content_box=\box71
+\l__pdf_backend_model_box=\box72
+\g__pdf_backend_annotation_int=\count266
+\g__pdf_backend_link_int=\count267
+\g__pdf_backend_link_sf_int=\count268
+)
+(/mnt/c/Users/takasuka/IdeaProjects/ipsj/out/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -153,10 +170,6 @@ LaTeX Font Info:    ... okay on input line 27.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 28.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -171,28 +184,45 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 30.
-(C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.bbl
+[1
+
+
+] (/mnt/c/Users/takasuka/IdeaProjects/ipsj/out/main.bbl
 LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
-(Font)              No change on input line 5.
-) [1
+(Font)              No change on input line 7.
+LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
+(Font)              No change on input line 14.
+LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
+(Font)              No change on input line 22.
+LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
+(Font)              No change on input line 28.
+ [2]
+LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
+(Font)              No change on input line 35.
+LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
+(Font)              No change on input line 42.
 
+Underfull \hbox (badness 2503) in paragraph at lines 39--43
+[]\OT1/cmr/m/n/10 Sebastien Weech, Sean Kenny, and Michael
+ []
 
-]
-(C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.aux)
+) [3
+
+] (/mnt/c/Users/takasuka/IdeaProjects/ipsj/out/main.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
-LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-06>
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1697 strings out of 469647
- 27543 string characters out of 5472187
- 440670 words of memory out of 5000000
- 30501 multiletter control sequences out of 15000+600000
- 637822 words of font info for 79 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 57i,16n,65p,243b,424s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 1858 strings out of 475989
+ 30146 string characters out of 5789700
+ 1938820 words of memory out of 5000000
+ 24030 multiletter control sequences out of 15000+600000
+ 568052 words of font info for 75 fonts, out of 8000000 for 9000
+ 264 hyphenation exceptions out of 8191
+ 57i,16n,65p,679b,387s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.dvi (1 page, 56
-72 bytes).
+Output written on /mnt/c/Users/takasuka/IdeaProjects/ipsj/out/main.dvi (3 pages
+, 18092 bytes).
