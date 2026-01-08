@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.17)  9 JAN 2026 02:46
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.17)  9 JAN 2026 04:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -220,6 +220,9 @@ LaTeX Info: Redefining \] on input line 2951.
 (C:\Users\ShimaLab\IdeaProjects\ipsj\\out/ipsj.sty
 \author@count=\count304
 )
+(c:/texlive/2025/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+)
 (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 File: l3backend-dvipdfmx.def 2025-10-09 L3 backend support: dvipdfmx
 \g__graphics_track_int=\count305
@@ -233,24 +236,24 @@ LaTeX Warning: Unused global option(s):
 (C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
 
 *geometry* detected driver: dvipdfm
 *geometry* verbose mode - [ preamble ] result:
@@ -289,44 +292,58 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 38.
+(Font)              size <17.28> substituted on input line 66.
+
+LaTeX Font Info:    Calculating math sizes for size <16> on input line 66.
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <16> not available
+(Font)              size <17.28> substituted on input line 66.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 66.
+
+
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 66.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 38.
+(Font)              size <10.95> substituted on input line 66.
 
-LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 38.
+LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 66.
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 38.
+(Font)              size <10.95> substituted on input line 66.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 38.
+(Font)              size <10.95> substituted on input line 66.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 38.
+(Font)              size <10.95> substituted on input line 66.
 
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 40.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 69.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 40.
-File: ../src/pictures/system_real.jpg Graphic file (type bmp)
-<../src/pictures/system_real.jpg>
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 69.
+File: ../src/pictures/overview.png Graphic file (type bmp)
+<../src/pictures/overview.png>
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 85.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 85.
 
 Overfull \hbox (9.62216pt too wide) has occurred while \output is active
 [][] 
  []
 
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 57.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 57.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 75.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 75.
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+[]\JY1/mc/m/n/10 振動刺激部にはフ ォ スタ ー電機の \OT1/cmr/m/n/10 FOS-TER
+ []
+
 [1
 
 
@@ -335,12 +352,15 @@ File: ../src/pictures/exp_subject.jpg Graphic file (type bmp)
 <../src/pictures/exp_subject.jpg>
 File: ../src/pictures/exp_scene.png Graphic file (type bmp)
 <../src/pictures/exp_scene.png>
- [2]
 File: ../src/pictures/VRSQ_diff.png Graphic file (type bmp)
 <../src/pictures/VRSQ_diff.png>
 File: ../src/pictures/immersive_diff.png Graphic file (type bmp)
 <../src/pictures/immersive_diff.png>
  (C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.bbl
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
 (Font)              No change on input line 8.
 LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
@@ -350,13 +370,7 @@ Underfull \hbox (badness 1152) in paragraph at lines 11--15
 []\OT1/cmr/m/n/8 Hyun K. Kim, Jae-hyun Park, Yeongcheol Choi, and
  []
 
-LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
-(Font)              No change on input line 20.
-LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
-(Font)              No change on input line 28.
-LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
-(Font)              No change on input line 35.
-) [3] (C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.aux)
+) [2] (C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2025-11-01>
@@ -369,13 +383,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 4258 strings out of 469647
- 71006 string characters out of 5472187
- 487172 words of memory out of 5000000
- 33005 multiletter control sequences out of 15000+600000
- 643283 words of font info for 101 fonts, out of 8000000 for 9000
+ 4285 strings out of 469647
+ 71685 string characters out of 5472187
+ 493282 words of memory out of 5000000
+ 33028 multiletter control sequences out of 15000+600000
+ 643896 words of font info for 103 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 67i,12n,77p,846b,599s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,12n,77p,508b,599s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.dvi (3 pages, 1
-9568 bytes).
+Output written on C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.dvi (2 pages, 1
+6096 bytes).
