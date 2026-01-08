@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.17)  9 JAN 2026 02:36
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.17)  9 JAN 2026 02:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -312,10 +312,6 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 40.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 48.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 48.
 File: ../src/pictures/system_real.jpg Graphic file (type bmp)
 <../src/pictures/system_real.jpg>
 
@@ -323,10 +319,14 @@ Overfull \hbox (9.62216pt too wide) has occurred while \output is active
 [][] 
  []
 
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 57.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 67.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 67.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 75.
 [1
 
 
@@ -345,19 +345,17 @@ LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
 (Font)              No change on input line 8.
 LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
 (Font)              No change on input line 14.
+
+Underfull \hbox (badness 1152) in paragraph at lines 11--15
+[]\OT1/cmr/m/n/8 Hyun K. Kim, Jae-hyun Park, Yeongcheol Choi, and
+ []
+
 LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
 (Font)              No change on input line 20.
 LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
 (Font)              No change on input line 28.
 LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
 (Font)              No change on input line 35.
-LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
-(Font)              No change on input line 42.
-
-Underfull \hbox (badness 1152) in paragraph at lines 39--43
-[]\OT1/cmr/m/n/8 Hyun K. Kim, Jae-hyun Park, Yeongcheol Choi, and
- []
-
 ) [3] (C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
@@ -371,13 +369,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 4261 strings out of 469647
- 71087 string characters out of 5472187
- 489149 words of memory out of 5000000
- 33008 multiletter control sequences out of 15000+600000
+ 4258 strings out of 469647
+ 71006 string characters out of 5472187
+ 487172 words of memory out of 5000000
+ 33005 multiletter control sequences out of 15000+600000
  643283 words of font info for 101 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  67i,12n,77p,846b,599s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.dvi (3 pages, 2
-0956 bytes).
+Output written on C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.dvi (3 pages, 1
+9568 bytes).

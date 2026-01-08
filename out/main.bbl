@@ -7,11 +7,11 @@ Dimitrios Saredakis, Andrzej Szpak, Benjamin Birckhead, Hannah A.~D. Keage,
   displays: A systematic review and meta-analysis.
 \newblock {\em Frontiers in Human Neuroscience}, Vol.~14, p.~96, 2020.
 
-\bibitem{Weech2019Presence}
-Sebastien Weech, Sean Kenny, and Michael Barnett-Cowan.
-\newblock Presence and cybersickness in virtual reality are negatively related:
-  A review.
-\newblock {\em Frontiers in Psychology}, Vol.~10, p. 158, 2019.
+\bibitem{Kim2018VRSQ}
+Hyun~K. Kim, Jaehyun Park, Yeongcheol Choi, and Mungyeong Choe.
+\newblock Virtual reality sickness questionnaire (vrsq): Motion sickness
+  measurement index in a virtual reality environment.
+\newblock {\em Applied Ergonomics}, Vol.~69, pp. 66--73, 2018.
 
 \bibitem{Sra2019ProprioGVS}
 Misha Sra, Abhinandan Jain, and Pattie Maes.
@@ -34,11 +34,5 @@ Kun-Woo Song and Sang~Ho Yoon.
   through neck muscle vibrations.
 \newblock {\em IEEE Transactions on Visualization and Computer Graphics},
   Vol.~31, No.~10, pp. 6977--6990, 2025.
-
-\bibitem{Kim2018VRSQ}
-Hyun~K. Kim, Jaehyun Park, Yeongcheol Choi, and Mungyeong Choe.
-\newblock Virtual reality sickness questionnaire (vrsq): Motion sickness
-  measurement index in a virtual reality environment.
-\newblock {\em Applied Ergonomics}, Vol.~69, pp. 66--73, 2018.
 
 \end{thebibliography}
