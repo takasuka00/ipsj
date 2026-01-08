@@ -51,7 +51,7 @@
 
 
 
-\title{マルチモーダルな感覚刺激に基づく加速度感覚誘発システム}{A Multimodal Sensory Stimulation-Based System for Inducing Acceleration Sensations}
+\title{VR酔い低減を目的とした三感覚系のマルチモーダル刺激システム}{A Multimodal Stimulation System Targeting Three Sensory Systems for VR Motion Sickness Reduction}
 
 \author{横浜国立大学}{高須賀 颯太}{Sota Takasuga, Yokohama National University}
 \author{横浜国立大学}{竹中 健祐}{Kensuke Takenaka, Yokohama National University}
@@ -83,7 +83,7 @@
     \end{figure}
 
     \subsection{刺激量算出部}
-    提案システムでは，予めユーザの不快に感じない最大の刺激量 (GVS:$I_{max}$, $U_{max}$) を設定し，VR上の位置情報から算出される刺激量 (GVS: $i$，振動: $u$) を蒸散した刺激量を提示する．ただし，$-1\le i\le 1$, $0\le u\le 1$である．ここで速度，加速度は基準値を1 $m/s$，1 $m/s^2$ として正規化して用いる．
+    提案システムでは，予めユーザの不快に感じない最大の刺激量 (GVS:$I_{max}$, 振動:$U_{max}$) を設定し，VR上の位置情報から算出される刺激量 (GVS: $i$，振動: $u$) を蒸散した刺激量を提示する．ただし，$-1\le i\le 1$, $0\le u\le 1$である．ここで速度，加速度は基準値を1 $m/s$，1 $m/s^2$ として正規化して用いる．
     \begin{equation}
         \hat{a}(t)=\frac{a_{\mathrm{lat}}(t)}{a_{\mathrm{ref}}},\qquad
         \hat{v}(t)=\frac{|v_{\mathrm{fwd}}(t)|}{v_{\mathrm{ref}}}
