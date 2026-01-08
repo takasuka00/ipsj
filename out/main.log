@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.17)  9 JAN 2026 06:45
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.11.17)  9 JAN 2026 07:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -360,12 +360,17 @@ LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
 (Font)              No change on input line 8.
 LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
 (Font)              No change on input line 14.
+ [2]
+LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
+(Font)              No change on input line 21.
 
-Underfull \hbox (badness 1152) in paragraph at lines 11--15
+Underfull \hbox (badness 1152) in paragraph at lines 18--22
 []\OT1/cmr/m/n/8 Hyun K. Kim, Jae-hyun Park, Yeongcheol Choi, and
  []
 
-) [2] (C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.aux)
+) [3
+
+] (C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2025-11-01>
@@ -379,12 +384,12 @@ LaTeX Font Warning: Size substitutions with differences
  ) 
 Here is how much of TeX's memory you used:
  4279 strings out of 469647
- 71623 string characters out of 5472187
- 493299 words of memory out of 5000000
+ 71624 string characters out of 5472187
+ 493302 words of memory out of 5000000
  33024 multiletter control sequences out of 15000+600000
  643557 words of font info for 102 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 67i,12n,77p,547b,603s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,12n,77p,571b,603s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.dvi (2 pages, 1
-6312 bytes).
+Output written on C:\Users\ShimaLab\IdeaProjects\ipsj\\out/main.dvi (3 pages, 1
+6896 bytes).
