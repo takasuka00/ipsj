@@ -77,7 +77,7 @@
     \section{システム}
     提案システムでは，VRシミュレーション上で生じる前方速度$v_{fwd}$，左右加速度$a_{lat}$から，それぞれの感覚刺激量を算出し，開発した刺激デバイスを用いて感覚を提示する．
 
-    \begin{figure}[H]
+    \begin{figure}[tbp]
         \centering
         \includegraphics[width=0.95\columnwidth]{overview.png}
         \caption{提案システム}
@@ -85,7 +85,7 @@
     \end{figure}
 
     \subsection{刺激量算出部}
-    提案システムでは，予めユーザの不快に感じない最大の刺激量 (GVS:$I_{max}$, 振動:$U_{max}$) を設定し，VR上の位置情報から算出される刺激量 (GVS: $i$，振動: $u$) を蒸散した刺激量を提示する．ただし，$-1\le i\le 1$, $0\le u\le 1$である．ここで速度，加速度は基準値を1 $m/s$，1 $m/s^2$ として正規化して用いる．
+    提案システムでは，予めユーザの不快に感じない最大の刺激量 (GVS:$I_{max}$, 振動:$U_{max}$) を設定し，VR上の位置情報から算出される刺激量 (GVS: $i$，振動: $u$) を乗算した刺激量を提示する．ただし，$-1\le i\le 1$, $0\le u\le 1$である．ここで速度，加速度は基準値を1 $m/s$，1 $m/s^2$ として正規化して用いる．
     \begin{equation}
         \hat{a}(t)=\frac{a_{\mathrm{lat}}(t)}{a_{\mathrm{ref}}},\qquad
         \hat{v}(t)=\frac{|v_{\mathrm{fwd}}(t)|}{v_{\mathrm{ref}}}
@@ -121,7 +121,7 @@
     \subsection{条件}
     被験者はHMDを装着し，Unity上で提示されるコースター体験タスクを実施した．タスク時間は1分とし，簡易化のため視点運動は左右方向の運動成分のみを持つように設計した．図\ref{fig:exp_task}に被験者装着の様子とタスク画面を示す．
 
-    \begin{figure}[H]
+    \begin{figure}[tbp]
         \centering
         \begin{subfigure}[b]{0.48\columnwidth}
             \centering
@@ -142,7 +142,7 @@
 
     実験では前庭電気刺激について無・弱（感覚閾値未満）・強（約$2\,\mathrm{mA}$）の3水準，振動刺激について無・有の2水準とし，$3\times2$の計6条件を設定した．刺激条件の対応を表\ref{tab:conditions}に示す．感覚閾値は被験者ごとに同定し，弱条件は主観的に知覚されない範囲で設定した．強条件は約$2\,\mathrm{mA}$を目安に設定した．各条件は3試行とし，条件順は被験者ごとにランダムに決定した．
 
-    \begin{table}[H]
+    \begin{table}[tbp]
         \centering
         \footnotesize
         \caption{実験条件（刺激条件の対応）}
@@ -168,7 +168,7 @@
 
     図\ref{fig:imm}に没入感変化を示す．没入感は刺激条件によって変化し，特に振動刺激を含む条件で向上傾向が見られる．没入感に関しては個人差や分散が大きくなりやすく，刺激タイミングや強度変調が視覚運動と不整合になる場合には効果が一様にならない可能性がある．したがって，今後は同期誤差の定量化と個人適応（閾値同定や強度スケーリング）を導入し，VR酔い低減と没入感向上の両立を図る必要がある．
 
-    \begin{figure}[H]
+    \begin{figure}[tbp]
         \centering
         \begin{subfigure}[b]{0.48\columnwidth}
             \centering
