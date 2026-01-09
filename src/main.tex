@@ -1,5 +1,4 @@
-% main.tex
-\documentclass[platex,dvipdfmx,a4paper,twocolumn,base=8.5pt,jbase=8.5pt,ja=standard]{bxjsarticle}
+\documentclass[platex,dvipdfmx,a4paper,twocolumn,base=8.5pt,jbase=8.5pt,ja=standard]{jsarticle}
 
 \usepackage[top=30truemm,bottom=25truemm,left=20truemm,right=20truemm]{geometry}
 \usepackage[dvipdfmx]{graphicx,color}
@@ -17,11 +16,11 @@
 \pagestyle{empty}
 \setlength{\columnsep}{7mm}
 
-\setlength{\textfloatsep}{6pt plus 2pt minus 2pt}
-\setlength{\intextsep}{6pt plus 2pt minus 2pt}
-\setlength{\abovecaptionskip}{2pt}
-\setlength{\belowcaptionskip}{2pt}
-\setlength\textfloatsep{15pt}
+%\setlength{\textfloatsep}{6pt plus 2pt minus 2pt}
+%\setlength{\intextsep}{6pt plus 2pt minus 2pt}
+%\setlength{\abovecaptionskip}{2pt}
+%\setlength{\belowcaptionskip}{2pt}
+%\setlength\textfloatsep{15pt}
 
 
 \usepackage{indentfirst}  % プリアンブルに追加
@@ -29,15 +28,17 @@
 % セクション周りの余白設定
 \makeatletter
 % \section の前後の余白
-
-
 % セクション後の段落もインデントする
 \@afterindenttrue
 
 \makeatother
 
 
-
+\titlespacing{\subsection}
+{0pt}% left
+{6pt}% before-sep
+{1.2pt}% after-sep
+\setlength\textfloatsep{15pt}
 \title{VR酔い低減を目的とした三感覚系のマルチモーダル刺激システム}{A Multimodal Stimulation System Targeting Three Sensory Systems for VR Motion Sickness Reduction}
 
 \author{横浜国立大学}{高須賀 颯太}{Sota Takasuga, Yokohama National University}
