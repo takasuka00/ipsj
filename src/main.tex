@@ -19,8 +19,8 @@
 
 \setlength{\textfloatsep}{6pt plus 2pt minus 2pt}
 \setlength{\intextsep}{6pt plus 2pt minus 2pt}
-\setlength{\abovecaptionskip}{2pt}
-\setlength{\belowcaptionskip}{2pt}
+\setlength{\abovecaptionskip}{0pt}
+\setlength{\belowcaptionskip}{0pt}
 \setlength\textfloatsep{15pt}
 
 \usepackage{indentfirst}
@@ -30,7 +30,7 @@
 % \section の前後の余白
 \renewcommand{\section}{%
     \@startsection{section}{1}{\z@}%
-    {-1ex \@plus -1ex \@minus -.2ex}%  % セクションの前の余白（負の値）
+    {-0.5ex \@plus -1ex \@minus -.2ex}%  % セクションの前の余白（負の値）
     {0.5ex \@plus.2ex}%                   % セクションの後の余白
     {\normalfont\Large\bfseries}%         % セクションのフォント
 }
@@ -38,7 +38,7 @@
 % \subsection の前後の余白
 \renewcommand{\subsection}{%
     \@startsection{subsection}{2}{\z@}%
-    {-1ex\@plus -.5ex \@minus -.2ex}%  % サブセクションの前の余白
+    {-0.5ex\@plus -.5ex \@minus -.2ex}%  % サブセクションの前の余白
     {0.5ex \@plus .2ex}%                  % サブセクションの後の余白
     {\normalfont\large\bfseries}%         % サブセクションのフォント
 }
@@ -53,9 +53,10 @@
 \setlength\textfloatsep{15pt}
 \title{VR酔い低減を目的とした三感覚系のマルチモーダル刺激システム}{A Multimodal Stimulation System Targeting Three Sensory Systems for VR Motion Sickness Reduction}
 
-\author{横浜国立大学}{高須賀 颯太}{Sota Takasuka, Yokohama National University}
-\author{横浜国立大学}{竹中 健祐}{Kensuke Takenaka, Yokohama National University}
-\author{横浜国立大学}{島 圭介}{Keisuke Shima, Yokohama National University}
+%\author{横浜国立大学}{高須賀 颯太}{Sota Takasuka, Yokohama National University}
+%\author{横浜国立大学}{竹中 健祐}{Kensuke Takenaka, Yokohama National University}
+%\author{横浜国立大学}{島 圭介}{Keisuke Shima, Yokohama National University}
+\author{横浜国立大学}{高須賀 颯太$^\dagger$ \qquad\quad 竹中 健祐$^\dagger$ \qquad\quad   島 圭介}{Sota Takasuka, Kensuke Takenaka and Keisuke Shima, Yokohama National University}
 \author{広島県立大学}{島谷 康司}{Koji Shimatani, Prefectural University of Hiroshima}
 
 
@@ -63,37 +64,39 @@
 
 \begin{document}
     \pagestyle{empty}  % ページ番号を消す
-    \setlength{\abovedisplayskip}{0pt} % 上部のマージン
+    \setlength{\abovedisplayskip}{1pt} % 上部のマージン
     \setlength{\belowdisplayskip}{1pt}
     \maketitle
     \thispagestyle{empty}  % 最初のページのページ番号も消す（maketitleの後に配置が重要）
 
 
     \section{はじめに}
-    頭部装着型ディスプレイ (HMD) を用いた仮想現実（VR）は訓練・設計支援・教育など多様な領域へ普及しているものの, 利用継続を妨げる要因としてVR酔いが知られている\cite{Saredakis2020Factors}.
-    VR酔いは視覚運動により生じた自己運動知覚に対し, 前庭・体性感覚が不整合である場合に生じやすく, 吐き気やめまい等を引き起こす.
-    これに対し, 前庭電気刺激 (Garvanic Vestibular Stimulation : GVS) や振動刺激を用いることで、前庭感覚または体性感覚に刺激を与えることでVR酔いの低減や没入感向上を図る手法が提案されている\cite{Sra2019ProprioGVS,Peng2020WalkingVibe}.
-    また, 人間の知覚は複数の感覚情報の統合によって形成されていることから,  複数の感覚刺激を重畳することで知覚の整合性が向上することが知られている\cite{ERNST2004162}.
-    したがって、GVSと振動刺激の重畳提示が有望と考えられるが, その効果は十分に検証されていない.
+    頭部装着型ディスプレイ (HMD) を用いた仮想現実（VR）は訓練・設計支援・教育など多様な領域へ普及しているものの, 利用継続を妨げる要因にVR酔いがある\cite{Saredakis2020Factors}.
+    VR酔いは, 視覚運動により生じた自己運動知覚に対して, 前庭・体性感覚との不整合を引き起こす.
+    これに対し, 前庭感覚または体性感覚に刺激を与えることでVR酔いの低減や没入感向上を図る手法が提案されている\cite{Sra2019ProprioGVS,Peng2020WalkingVibe}.
+     ここで, 複数の感覚刺激を重畳することで効果的に感覚統合を促進できること\cite{ERNST2004162}を鑑みれば, 前庭電気刺激 (Galvanic Vestibular Stimulation : GVS) と振動刺激の重畳提示がVR酔い低減に有効と考えられる.
+    ただし, その効果は十分に検証されていない.
 
-    そこで本稿では, 視覚運動に同期したGVSと頬・首への振動刺激を組み合わせて提示することで, 加速度感覚の補完と感覚間整合の向上を狙う.
-    提案システムではVR上の速度・加速度に基づきマルチモーダル刺激を同期制御するシステムを構築し, VR酔いの低減と没入感の向上効果を評価する.
+    そこで本稿では, 視覚運動に同期したGVSと頬・首への振動刺激を組み合わせて提示することで, 加速度感覚の補完と感覚間整合を向上させる方法論を提案する.
+    これにより, VRにおける没入感の向上やVR酔いの低減が期待される.
 
 
     \section{提案システム}
+    人の前庭覚は身体の傾きや身体に生じる加速度を検知し, 体性感覚, 特に皮膚感覚 (表在覚) は身体に加わる振動や物体の接触, 肌にあたる風などを検知する.
+    この点をもとに, 本稿では加速度情報に基づいた前庭感覚刺激 (GVS) および速度情報に基づいた体性感覚刺激 (左右の振動刺激) を同時に提示可能なデバイスを開発した.
     図\ref{fig:system_photo}に提案システムの概要を示す.
-    提案法では, VRシミュレーション上で生じる速度$v$, 加速度$a$から, それぞれの感覚刺激量を算出し, 開発した刺激デバイスを用いて感覚を提示する.
+    以下, システムのハードウェアとソフトウェアについて説明する.
 
 
 
     \subsection{ハードウェア}
-    本稿ではGVSと左右の振動刺激を用いることにより, 前庭感覚および体性感覚を同時に刺激可能デバイスを開発した.
-    本デバイスはGVS用電流出力部と振動用駆動部から構成されており, PCから送信される右振動, 左振動, およびGVSの3種類の刺激量に基づき, 視覚運動に同期したマルチモーダル刺激を提示する.
 
-    歩行時の振動を頬部に提示した先行研究\cite{8798158}が報告されているが, 提案システムでは特定の動作に依存しない, より一般的な移動運動を対象とする.
-    そこで, 移動速度の変化に伴って知覚される空気抵抗を頬部への振動刺激として再現する.
+    本デバイスはGVS用電流出力部と振動用駆動部から構成される.
+    PCから送信される右振動, 左振動, およびGVSの3種類の刺激量に基づき, 視覚運動に同期したマルチモーダル刺激を提示する.
 
-    振動刺激部には4つの振動子（フォスター電機社製）を3Dプリンタで作成した治具によって左右の頬および首周辺に配置し, それぞれを独立に駆動する.
+    振動刺激部にはそれぞれ独立駆動が可能な4つの振動子（フォスター電機社製）を用いる.
+    歩行時に身体に生じる振動を頬部に提示した先行研究\cite{8798158}を参考に, 振動子を3Dプリンタで作成した治具によって左右の頬および首周辺に配置し, 移動に伴って知覚される空気抵抗を, 頬部への振動刺激として再現する.
+
     GVSについてはオペアンプを用いた定電流回路を設計・開発し, 乳突部に貼付した電極を介して直流電流により前庭神経へ微小電流を印加する.
 
     \begin{figure}[t]
@@ -124,21 +127,17 @@
 
     \subsection{ソフトウェア}
 
-    ユーザが不快に感じない最大刺激量として, GVSの最大電流$I_{\textrm{max}}$と振動の最大振幅$U_{\textrm{max}}$を予め設定し, ソフトウェア上で算出される無次元の指令値（GVS：$i(t)$, 振動：$u_{\textrm R}(t),u_{\textrm L}(t)$）を乗算した刺激量を与えることで, 被験者ごとに最適化した感覚刺激を提示する. 
+    提案法では, まず仮想空間上の視点位置$\boldsymbol{x}(t)$から, その時間微分により仮想空間上でユーザに生じる速度$\boldsymbol{v}(t)$, 加速度$\boldsymbol{a}(t)$を算出する.
 
-    提案法では, 仮想空間上の視点位置$\boldsymbol{x}(t)$から, その時間微分により仮想空間上でユーザに生じている速度$\boldsymbol{v}(t)$, 二階微分により加速度$\boldsymbol{a}(t)$を算出する. 
-
-    前庭感覚は内耳の耳石が加速度を検出する感覚系であるため, GVSでは左右方向の加速度$a_{\textrm{lat}}$に比例してGVS指令値を生成する.
-    スケーリング係数$k_{\textrm a}$を用いて
+    前庭感覚は内耳の耳石が加速度を検出する感覚系であるため, GVSでは左右方向の加速度$a_{\textrm{lat}}$に比例してGVS指令値を生成し, スケーリング係数$k_{\textrm a}$を用いて次式で与える.
     \begin{equation}
         i(t)=k_\textrm{a}\,a_{\textrm{lat}}(t)\label{eq:equation2}
     \end{equation}
-    とし, 最終的な電流は次式で与える. 
     \begin{equation}
         I(t)=I_{\textrm{max}}\,i(t)\label{eq:equation3}
     \end{equation}
 
-    体性感覚については空気抵抗の再現を目的とし, その物理的性質に基づき, 前後方向速度$v_{\textrm{fwd}}(t)$に比例した振幅の振動刺激を左右それぞれのアクチュエータに与える.
+    体性感覚には前後方向速度$v_{\textrm{fwd}}(t)$に比例した振幅の振動刺激を左右それぞれのアクチュエータに与える.
     ここで, 左右方向の加速度$a_{\textrm{lat}}(t)$を混合して振幅指令値を生成することで, 左右の加速度変化を同時に体性感覚に与える.
     混合比$r$およびスケーリング係数$k_{\textrm v}$を用いて
     \begin{align}
@@ -146,12 +145,13 @@
         u_{\textrm L}(t) &= -(1-r)\,k_\textrm{a}\,a_{\textrm{lat}}(t) + r\,k_{\textrm v}\,|v_{\textrm{fwd}}(t)|
     \end{align}
     とする.
-    最終的な振動刺激量は
+    最終的な振動刺激量は以下となる.
     \begin{equation}
         U_{\textrm R}(t)=U_{\textrm{max}}\,u_{\textrm R}(t),\qquad
         U_{\textrm L}(t)=U_{\textrm{max}}\,u_{\textrm L}(t)\label{eq:equation4}
     \end{equation}
-    とし, 右・左の振動アクチュエータを駆動する. 
+    ただし,  $I_{\textrm{max}}$と$U_{\textrm{max}}$はユーザが不快に感じない範囲で予め設定する.
+
 
 
 
@@ -188,16 +188,16 @@
         \end{tabular}
     \end{table}
 
-    評価指標としてVR酔いの程度をVirtual Reality Sickness Questionnaire（VRSQ）\cite{Kim2018VRSQ}を被験者自身に回答させ, 没入感をVisual Analog Scale（VAS）で取得した.
+    評価指標としてVR酔いの程度をVirtual Reality Sickness Questionnaire（VRSQ）\cite{Kim2018VRSQ}を被験者に回答させ, 没入感をVisual Analog Scale（VAS）で取得した.
     各条件のスコアから刺激なし（条件a）を基準とした差分を算出し, 各条件間でボンフェローニ補正を適用した多重比較検定を行った.
 
-    図\ref{fig:results} (a) に被験者が回答したVR酔い変化を示す.
-    無刺激（条件a）と比較してGVS弱または振動刺激を付与した条件において有意に低下し, 改善した.
+    図\ref{fig:results} (a) に被験者が回答したVR酔いの量の変化を示す.
+    無刺激（条件a）と比較してGVS弱または振動刺激を付与した条件において有意に低下し, 改善がみられた.
     さらに, 片方のみを付与した条件と比較して, 両方を併用した条件では有意に低下し, マルチモーダル刺激による重畳効果が示唆された.
 
     図\ref{fig:results} (b) に没入感変化を示す.
-    没入感は刺激条件によって変化し, 特に振動刺激を含む条件で向上傾向が見られる.
-    しかしながら個人差や分散が大きくなりやすく, 刺激タイミングや強度変調が視覚運動と不整合になる場合には効果が一様にならない可能性がある.
+    没入感は刺激条件によって変化し, 特に振動刺激を含む条件で向上傾向がみられる.
+    ただし個人差や分散が大きくなりやすく, 刺激タイミングや強度変調が視覚運動と不整合になる場合には効果が一様にならない可能性がある.
     今後は閾値同定や強度スケーリングなどの個人適応を導入し, VR酔い低減と没入感向上の両立を図る必要がある.
 
     \begin{figure}[tbp]
@@ -223,7 +223,7 @@
     \section{おわりに}
     本稿では, 視覚運動に同期してGVSと頬・首振動を同時制御する加速度感覚誘発システムを提案し, 6条件の被験者内比較によりVRSQとVASを用いて評価した.
     その結果, 無刺激条件に対してGVS弱または振動刺激の付与でVR酔い改善に有意差が確認された.
-    今後は, 被験者ごとの感覚特性に応じた個人適応を導入し, 提案システムの最適化を目指す. 
+    今後は, 被験者ごとの感覚特性に応じた個人適応を導入し, 刺激の強度やタイミングの設計を最適化することで, 汎用的な感覚提示手法の確立を目指す.
 
 
 
